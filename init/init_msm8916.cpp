@@ -43,9 +43,15 @@
 #include "vendor_init.h"
 
 #include "init_msm8916.h"
+<<<<<<< HEAD
 
 using android::base::GetProperty;
 using android::base::Trim;
+=======
+namespace android {
+namespace init {
+using android::base::GetProperty;
+>>>>>>> ee4a1bb... msm8916-common: fix build on aosp 8.1.0_r1
 
 __attribute__ ((weak))
 void init_target_properties()
@@ -89,4 +95,7 @@ void vendor_load_properties()
 {
     init_target_properties();
     init_alarm_boot_properties();
+}
+
+}
 }
