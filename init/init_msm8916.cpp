@@ -35,23 +35,15 @@
 #include <sys/types.h>
 
 #include <android-base/properties.h>
-#include <android-base/strings.h>
-
-#include "log.h"
 #include "property_service.h"
-#include "util.h"
 #include "vendor_init.h"
+#include "log.h"
 
 #include "init_msm8916.h"
-<<<<<<< HEAD
 
-using android::base::GetProperty;
-using android::base::Trim;
-=======
 namespace android {
 namespace init {
 using android::base::GetProperty;
->>>>>>> ee4a1bb... msm8916-common: fix build on aosp 8.1.0_r1
 
 __attribute__ ((weak))
 void init_target_properties()
